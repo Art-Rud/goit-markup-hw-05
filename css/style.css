@@ -550,7 +550,6 @@ h1 {
 }
 .form-field-input-wrapper {
   position: relative;
-  display: block;
 }
 .form-icon {
   position: absolute;
@@ -562,8 +561,10 @@ h1 {
 .form-field-wrapper {
   margin-bottom: 8px;
 }
+.form-field-textarea-wrapper {
+  margin-bottom: 16px;
+}
 .modal-form-chekbox-wrapper {
-  margin-top: 16px;
   margin-bottom: 24px;
   display: flex;
   align-items: center;
