@@ -419,10 +419,13 @@ h1 {
 }
 .footer-form-btn {
   display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 165px;
   height: 40px;
   padding: 8px 24px;
   border-radius: 4px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
@@ -491,9 +494,11 @@ h1 {
   align-items: center;
   justify-content: center;
   fill: #2e2f42;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
@@ -525,13 +530,14 @@ h1 {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-comment {
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   padding: 8px 16px;
   height: 120px;
   resize: none;
 }
-.form-comment ::placeholder {
-  color: rgba(46, 47, 66, 0.4);
-}
+
 .form-input:focus {
   border-color: #4d5ae5;
 }
@@ -544,7 +550,7 @@ h1 {
 }
 .form-field-input-wrapper {
   position: relative;
-  display: flex;
+  display: block;
 }
 .form-icon {
   position: absolute;
@@ -576,19 +582,19 @@ h1 {
   justify-content: center;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  fill: none;
+  fill: transparent;
   cursor: pointer;
   margin-right: 8px;
   width: 16px;
   height: 16px;
-  transition: fiil 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-chekbox:checked + .form-field-chekbox-label > .custom-chekbox {
   background-color: #404bbf;
   fill: #f4f4fd;
-  border-color: #404bbf;
+  border: none;
 }
 .modal-form-chekbox:focus + .form-field-chekbox-label > .custom-chekbox {
   border-color: #404bbf;
